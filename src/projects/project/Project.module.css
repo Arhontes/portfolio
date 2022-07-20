@@ -1,0 +1,24 @@
+.project{
+    width: 200px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: navajowhite;
+}
+.redirectButton{
+
+}
+.projectTitle{
+
+}
+.projectDescription{
+
+}
