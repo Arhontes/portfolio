@@ -1,15 +1,11 @@
 .contactsBlock {
-    background-color: #325d32;
+    background-color: #362943;
 }
 
 .contactsContainer {
     background-color: #566b6c;
     min-height: 100vh;
     flex-direction: column;
-}
-
-.title {
-    background-color: #ffc401;
 }
 
 .contactsForm {
