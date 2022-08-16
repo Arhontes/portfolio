@@ -1,0 +1,37 @@
+@import './src/common/styles/sass/variables';
+
+.contactsBlock {
+    background-color: $bgColor;
+    border-top: 1px solid grey;
+
+    .contactsContainer {
+
+
+        flex-direction: column;
+        .contactsForm {
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sendButton {
+            margin: 20px;
+            border:none;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: $textColor;
+            padding:7px;
+            background-color: $bgElementColor;
+            position: relative;
+            z-index: 1;
+            &:hover{
+                border-bottom: 2px solid $primaryColor;
+            }
+        }
+    }
+}
+
+
+
+
+

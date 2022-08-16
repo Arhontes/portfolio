@@ -1,12 +1,13 @@
-import React from 'react';
-import style from "./Project.module.css"
+import React, {useState} from 'react';
+import style from "./Project.module.scss"
 
 export const Project = (props) => {
+
     return (
         <div>
             <div className={style.project}>
                 <div style={props.style} className={style.imgContainer}>
-                    <button className={style.redirectButton}>About</button>
+                    <button className={style.redirectButton} >About</button>
                 </div>
                 <div className={style.projectInfo}>
                     <h3 className={style.projectTitle}>{props.projectTitle}</h3>

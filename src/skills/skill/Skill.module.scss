@@ -1,0 +1,37 @@
+@import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
+.skill{
+    width: 285px;
+    background-color:$bgElementColor;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .icon{
+        margin-top: 10px;
+        height: 60px;
+        width: 60px;
+        background-color: rebeccapurple;
+    }
+    .skillInfo{
+        padding: 25px 20px;
+        text-align:start;
+        .skillTitle{
+            @include text(16px, 1.2);
+            margin: 5px 0;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        .description{
+            @include text(13px, 1.8);
+            place-content: space-between;
+            font-family: 'Poppins', sans-serif;
+            color: $textColor;
+            font-weight: 400;
+        }
+    }
+
+}
+

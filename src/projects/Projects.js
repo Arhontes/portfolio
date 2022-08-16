@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Projects.module.css'
+import style from './Projects.module.scss'
 import styleContainer from "../common/styles/container.module.css";
 import {Project} from "./project/Project";
 import Title from "../common/components/title/Title";
@@ -23,6 +23,7 @@ export const Projects = () => {
                         <Project style={social} projectTitle={"Social Network"} shortDescription={shortDescription}/>
                         <Project style={todolist} projectTitle={"TodoList"} shortDescription={shortDescription}/>
                         <Project projectTitle={"Converter"} shortDescription={shortDescription}/>
+                        <Project projectTitle={"Calculator"} shortDescription={shortDescription}/>
                         <Project projectTitle={"Calculator"} shortDescription={shortDescription}/>
                     </div>
                 </div>

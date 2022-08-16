@@ -1,0 +1,29 @@
+@import './src/common/styles/sass/variables';
+
+.footerBlock{
+    background-color: $bgColor;
+    border-top: 1px solid grey;
+    .footerContainer{
+        flex-direction: column;
+        .title{
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 23px;
+        }
+        .socialContainer{
+            display: flex;
+            justify-content: space-around;
+            .social{
+                border: 1px solid;
+                background-color: #7c6363;
+                width: 40px;
+                height: 40px;
+                margin: 3px;
+            }
+        }
+
+    }
+    border-bottom:none;
+}
+
+
