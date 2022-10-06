@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import Title from "../common/components/title/Title";
-import facebook from '../assets/images/react-icon.svg';
-
+import vkLogo from '../assets/images/vkLogo.svg';
+import telegramLogo from '../assets/images/telegramLogo.svg';
+import githubLogo from '../assets/images/githubLogo.svg'
+import linkedinLogo from '../assets/images/linkedinLogo.svg';
+import instagramLogo from '../assets/images/instagramLogo.svg';
 
 function Footer() {
     return (
@@ -12,22 +15,27 @@ function Footer() {
                 <div className={styles.socialIcons}>
                     <div className={styles.socialIcon}>
                         <a href="">
-                            <img src={facebook} alt=""/>
+                            <img src={telegramLogo} alt=""/>
                         </a>
                     </div>
                     <div className={styles.socialIcon}>
                         <a href="">
-                            <img src={facebook} alt=""/>
+                            <img src={vkLogo} alt=""/>
                         </a>
                     </div>
                     <div className={styles.socialIcon}>
                         <a href="">
-                            <img src={facebook} alt=""/>
+                            <img src={githubLogo} alt=""/>
                         </a>
                     </div>
                     <div className={styles.socialIcon}>
                         <a href="">
-                            <img src={facebook} alt=""/>
+                            <img src={linkedinLogo} alt=""/>
+                        </a>
+                    </div>
+                    <div className={styles.socialIcon}>
+                        <a href="">
+                            <img src={instagramLogo} alt=""/>
                         </a>
                     </div>
                 </div>
