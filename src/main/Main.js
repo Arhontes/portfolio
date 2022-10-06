@@ -1,23 +1,23 @@
 import React from 'react';
-import style from "./Main.module.scss"
-import styleContainer from "../../src/common/styles/container.module.css"
-function Main(props) {
+import styles from './Main.module.scss';
+
+
+function Main() {
     return (
-        <div className={style.mainBlock}>
-            <div className={`${styleContainer.container} ${style.mainContainer}`}>
-                {/*introduction field*/}
-                <div className={style.introduction}>
-                    <span className={style.hello} >Hi There</span>
-                    <h1 className={style.myName}>I am Alexander Betke</h1>
-                    <p className={style.specialization}>A React/Redux Frontend Developer</p>
+        <div className={styles.mainBlock}>
+            <div className={styles.container}>
+                <div className={styles.greeting}>
+                    <span>Hi There</span>
+                    <span>I am Alex <span>Betke</span></span>
+                    <h1>Frontend Developer.</h1>
+                </div>
+                <div className={styles.photo}>
+                    <div className={styles.image}>
+
+                    </div>
                 </div>
 
-                {/*photo field*/}
-                <div className={style.photo}>
-
-                </div>
             </div>
-
         </div>
     );
 }

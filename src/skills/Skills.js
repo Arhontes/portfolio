@@ -1,29 +1,37 @@
 import React from 'react';
-import style from './Skills.module.scss'
-import styleContainer from "../../src/common/styles/container.module.css"
-import {Skill} from "./skill/Skill";
+import styles from './Skills.module.scss';
+import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
+import reactIcon from "./../assets/images/react-icon.svg";
+import jsIcon from "./../assets/images/js-icon.svg";
+import htmlIcon from "./../assets/images/html-icon.svg";
 
-export function Skills(props) {
-    const description = "Lorem ipsum dolor sit amet,consectetur adipisicing elit. Aspernatur beataedelectus!"
+
+
+
+function Skills() {
+    let react = reactIcon;
+    let js = jsIcon;
+    let html = htmlIcon;
+
     return (
-        <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`} >
-                <Title title={"Skills"}/>
-                <div className={style.skills}>
-                        <Skill title={"JS"} description={description}/>
-                        <Skill title={"React"} description={description}/>
-                        <Skill title={"CSS"} description={description}/>
-                        <Skill title={"Redux"} description={description}/>
-                        <Skill title={"StoryBook"} description={description}/>
-                        <Skill title={"HTML"} description={description}/>
-                        <Skill title={"Git"} description={description}/>
-                        <Skill title={"Github"} description={description}/>
-                        <Skill title={"RESTful APIs"} description={description}/>
-                        <Skill title={"SASS"} description={description}/>
+        <div className={styles.skillsBlock}>
+            <div className={styles.container}>
+                <Title text={"Skills"}/>
+                <div className={styles.skills}>
+                    <Skill title={"Js"}
+                           icon={js}
+                           description={"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim..."}/>
+                    <Skill title={"html & Css"}
+                           icon={html}
+                           description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, "}/>
+                    <Skill title={"React"}
+                           icon={react}
+                           description={"ut labore et dolore magna aliqua Ut."}/>
                 </div>
             </div>
         </div>
     );
 }
 
+export default Skills;

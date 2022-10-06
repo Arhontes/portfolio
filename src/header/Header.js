@@ -1,12 +1,15 @@
 import React from 'react';
-import style from './Header.module.scss'
-import {Nav} from "../nav/Nav";
+import styles from './Header.module.scss';
+import Nav from "./nav/Nav";
 
-export function Header(props) {
+
+
+function Header() {
     return (
-        <div className={style.header}>
+        <div className={styles.header}>
             <Nav />
         </div>
     );
 }
 
+export default Header;

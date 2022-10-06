@@ -1,22 +1,24 @@
-import React, {useState} from 'react';
-import style from "./Project.module.scss"
+import React from 'react';
+import style from './Project.module.scss';
+import Button from "../../common/components/button/Button";
 
-export const Project = (props) => {
+
+
+
+function Project(props) {
+
 
     return (
-        <div>
-            <div className={style.project}>
-                <div style={props.style} className={style.imgContainer}>
-                    <button className={style.redirectButton} >About</button>
-                </div>
-                <div className={style.projectInfo}>
-                    <h3 className={style.projectTitle}>{props.projectTitle}</h3>
-                    <span className={style.projectDescription}>
-                        {props.shortDescription}
-                    </span>
-                </div>
-
+        <div className={style.project}>
+            <div className={style.image} style={props.style}>
+                <Button text={"view"}/>
+            </div>
+            <div className={style.projectInfo}>
+                <h3 className={style.projectTitle}>{props.title}</h3>
+                <span className={style.description}>{props.description}</span>
             </div>
         </div>
     );
-};
+}
+
+export default Project;
