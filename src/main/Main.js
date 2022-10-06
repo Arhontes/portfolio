@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from './Main.module.scss';
+import MouseAttractionPartical from "../common/components/MouseAttraction-Partical";
+
 
 
 function Main() {
     return (
         <div className={styles.mainBlock}>
+            <MouseAttractionPartical />
             <div className={styles.container}>
                 <div className={styles.greeting}>
                     <span>Hi There</span>
