@@ -1,17 +1,16 @@
 import React from 'react';
 import style from './Nav.module.scss';
+import {HeaderLink} from "../../common/components/header-link/HeaderLink";
 
 
-
-function Nav() {
+function Nav(props) {
     return (
         <div className={style.nav}>
-            <a href="">Main</a>
-            <a href="">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contacts</a>
+            {props.linkList.map(el=><HeaderLink key={el.id} text={el.text} to={el.to}/>)}
         </div>
     );
 }
+
+
 
 export default Nav;

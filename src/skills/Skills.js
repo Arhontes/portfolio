@@ -15,7 +15,7 @@ function Skills() {
     let html = htmlIcon;
 
     return (
-        <div className={styles.skillsBlock}>
+        <div id={"skills"} className={styles.skillsBlock}>
             <div className={styles.container}>
                 <Title text={"Skills"}/>
                 <div className={styles.skills}>

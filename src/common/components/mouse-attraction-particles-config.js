@@ -1,6 +1,7 @@
 export const mouseAttractionParticlesConfig = {
     style: {
-        position:"absolute"
+        position:"absolute",
+        opacity:0.3,
     },
     fps_limit: 60,
     interactivity: {
