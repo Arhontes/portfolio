@@ -9,7 +9,7 @@ function Telework() {
         <div className={style.hireBlock}>
             <div className= {style.container} >
                 <Title text={"I am available for Freelance"}/>
-                <Button text={"Hire me"}/>
+                <Button text={"Hire me"} redirectTo="#contacts"/>
             </div>
         </div>
     );
