@@ -14,17 +14,17 @@ function Footer() {
                 <Title text={"Alex Betke"}/>
                 <div className={styles.socialIcons}>
                     <div className={styles.socialIcon}>
-                        <a href="">
+                        <a href="https://t.me/Alex_Betke">
                             <img src={telegramLogo} alt=""/>
                         </a>
                     </div>
                     <div className={styles.socialIcon}>
-                        <a href="">
+                        <a href="https://vk.com/arhontes">
                             <img src={vkLogo} alt=""/>
                         </a>
                     </div>
                     <div className={styles.socialIcon}>
-                        <a href="">
+                        <a href="https://github.com/Arhontes">
                             <img src={githubLogo} alt=""/>
                         </a>
                     </div>
@@ -34,7 +34,7 @@ function Footer() {
                         </a>
                     </div>
                     <div className={styles.socialIcon}>
-                        <a href="">
+                        <a href="https://www.instagram.com/alex_betke/">
                             <img src={instagramLogo} alt=""/>
                         </a>
                     </div>
